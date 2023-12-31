@@ -1,0 +1,34 @@
+package STEP_DEFINITIONS;
+
+import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginSteps {
+
+WebDriver driver = null;
+
+	@Given("user is on login page")
+	public void user_is_on_login_page() {
+		System.out.println("loged");
+	}
+
+	@When("user enters username and pass")
+	public void user_enters_username_and_pass() {
+		System.out.println("entrs");
+	}
+
+	@When("clicks on login button")
+	public void clicks_on_login_button() {
+		System.out.println("clicked");
+	}
+
+	@Then("user is navigated to the home page")
+	public void user_is_navigated_to_the_home_page() {
+		System.out.println("isnavigated");
+	}
+
+
+}

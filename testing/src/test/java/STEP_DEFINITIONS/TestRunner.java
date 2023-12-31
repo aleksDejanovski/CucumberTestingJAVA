@@ -1,0 +1,14 @@
+package STEP_DEFINITIONS;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.*;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="src\\test\\resources\\FEATURES",glue= {"STEP_DEFINITIONS"},
+monochrome = true, 
+plugin = {"pretty","html:target/HtmlReports"})
+public class TestRunner {
+
+}

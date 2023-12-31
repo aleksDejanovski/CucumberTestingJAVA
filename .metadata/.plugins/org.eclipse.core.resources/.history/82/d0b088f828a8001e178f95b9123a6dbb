@@ -1,0 +1,8 @@
+Feature: simple test
+
+  Scenario: Validate google search
+    Given browser is open
+    And user is on google search
+    When user enters text in search box
+    And clicks Enter
+    Then user is navigated to search results

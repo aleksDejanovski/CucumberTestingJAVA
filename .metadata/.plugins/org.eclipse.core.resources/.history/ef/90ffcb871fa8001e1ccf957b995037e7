@@ -1,0 +1,8 @@
+Feature: Feature to test login functionality
+
+Scenario: Check login with valid credentials
+
+Given user is on login page
+When user enters username and pass
+And clicks on login button
+Then iser is navigated to the home page
